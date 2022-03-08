@@ -1,0 +1,11 @@
+{
+  "name": "vue3-ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "packageManager": "pnpm@6.32.2",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "vite": "^2.8.6"
+  }
+}
