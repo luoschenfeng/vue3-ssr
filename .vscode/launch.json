@@ -2,12 +2,13 @@
   "configurations": [
   {
     "name": "Launch Program",
-    "program": "${workspaceFolder}/main.js",
+    "program": "${workspaceFolder}/ssr-dev.js",
     "request": "launch",
     "skipFiles": [
       "<node_internals>/**"
     ],
-    "type": "pwa-node"
+    "type": "pwa-node",
+    "runtimeExecutable": "/Users/guohuan/.nvm/versions/node/v16.13.1/bin/node"
   }
   ]
 }

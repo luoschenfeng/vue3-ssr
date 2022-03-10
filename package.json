@@ -1,11 +1,19 @@
 {
   "name": "vue3-ssr",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "ssr-dev.js",
   "license": "MIT",
   "packageManager": "pnpm@6.32.2",
   "dependencies": {
+    "@vitejs/plugin-vue": "^2.2.4",
+    "element-plus": "^2.0.5",
     "koa": "^2.13.4",
-    "vite": "^2.8.6"
+    "koa-connect": "^2.1.0",
+    "vite": "^2.8.6",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.13"
+  },
+  "scripts": {
+    "dev": "node ."
   }
 }
