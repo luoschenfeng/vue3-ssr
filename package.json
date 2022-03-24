@@ -1,19 +1,29 @@
 {
   "name": "vue3-ssr",
   "version": "1.0.0",
-  "main": "ssr-dev.js",
+  "main": "dev-main.ts",
   "license": "MIT",
   "packageManager": "pnpm@6.32.2",
   "dependencies": {
+    "@types/koa": "^2.13.4",
     "@vitejs/plugin-vue": "^2.2.4",
-    "element-plus": "^2.0.5",
     "koa": "^2.13.4",
     "koa-connect": "^2.1.0",
+    "typescript": "^4.6.2",
     "vite": "^2.8.6",
     "vue": "^3.2.31",
     "vue-router": "^4.0.13"
   },
   "scripts": {
-    "dev": "node ."
+    "dev": "ts-node dev-main.ts",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.vue"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "ts-node": "^10.7.0"
   }
 }

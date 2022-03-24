@@ -1,5 +1,9 @@
-import { createApp } from './sub'
-import { createRouter } from './router'
+import {
+  createApp, 
+} from './common-entry'
+import {
+  createRouter, 
+} from './router'
 const app = createApp()
 
 const router = createRouter('client')

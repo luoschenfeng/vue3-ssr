@@ -1,26 +1,21 @@
 <template>
-  <div @click="handleClick">click me count: {{ count }}</div>
-  <router-view></router-view>
+  <div @click="handleClick">
+    click me count: {{ count }}
+  </div>
+  <router-view />
 </template>
 
 <script setup lang="ts">
-import { $ref } from 'vue/macros'
-import { InjectionKey, provide } from 'vue'
+import {
+  $ref, 
+} from 'vue/macros'
 
 let count = $ref(1)
+
 function handleClick() {
   console.log(1)
-    count++
+  count++
 }
-
-const key = Symbol('ID_INJECTION_KEY') as InjectionKey<{
-    prefix: number,
-    current: number,
-}>
-provide(key, {
-  prefix: Math.floor(Math.random() * 1e4),
-  current: 0
-})
 </script>
 
 <style>

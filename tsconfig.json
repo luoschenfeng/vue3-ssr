@@ -3,7 +3,7 @@
       /* Basic Options */
       // "incremental": true,                   /* Enable incremental compilation */
       "target": "ESNext",
-      "module": "ESNext",
+      "module": "CommonJS",
       // "lib": [],                             /* Specify library files to be included in the compilation. */
       // "allowJs": true,                       /* Allow javascript files to be compiled. */
       // "checkJs": true,                       /* Report errors in .js files. */
@@ -46,7 +46,6 @@
       },
       // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
       // "typeRoots": [],                       /* List of folders to include type definitions from. */
-      "types": ["element-plus/global"],         /* Type declaration files to be included in compilation. */
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
       // "preserveSymlinks": true,             /* Do not resolve the real path of symlinks. */
@@ -67,8 +66,8 @@
       "forceConsistentCasingInFileNames": true
     },
     "include": [
-      "src",
-      "./ssr-dev.js",
+      "src/**/*",
+      "dev-main.ts",
     ]
   }
   
