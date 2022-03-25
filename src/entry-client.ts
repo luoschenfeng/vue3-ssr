@@ -2,15 +2,13 @@ import {
   createApp, 
 } from './common-entry'
 import {
-  createRouter, 
+  clientRouter, 
 } from './router'
 const app = createApp()
 
-const router = createRouter('client')
+app.use(clientRouter)
 
-app.use(router)
-
-router.isReady().then(() => {
+clientRouter.isReady().then(() => {
   app.mount('#app')
 }) 
 

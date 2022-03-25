@@ -5,8 +5,7 @@ import * as  Koa from 'koa'
 
 import koaConnect from 'koa-connect'
 
-
-async function viteServerMiddleware(ctx: Koa.Context, next: Koa.Next) {
+const viteServerMiddleware : Koa.Middleware = async function (ctx: Koa.Context, next: Koa.Next) {
   const viteServer = await createViteServer({
     root: process.cwd(),
     server: {

@@ -1,6 +1,6 @@
 import Koa from 'koa'
-import viteServerMiddleware from './middlewares/viteServerMiddleware'
-import templateMiddleware from './middlewares/templateMiddleware'
+import viteServerMiddleware from './src/middlewares/viteServerMiddleware'
+import templateMiddleware from './src/middlewares/templateMiddleware'
 
 const app = new Koa()
 

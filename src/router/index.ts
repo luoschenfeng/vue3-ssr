@@ -3,9 +3,12 @@ import {
 } from 'vue-router'
 import routes from './routes'
 
-export function createRouter(type: 'client' | 'server'): Router {
+function createRouter(type: 'client' | 'server'): Router {
   return createVueRouter({
     history: (type === 'client') ? createWebHistory() : createMemoryHistory(),
     routes,
   })
 }
+
+export const clientRouter = createRouter('client')
+export const serverRouter = createRouter('server')
