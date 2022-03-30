@@ -1,19 +1,12 @@
-import { 
-  createServer as createViteServer,
-}  from 'vite'
-import * as  Koa from 'koa'
-
+import  {
+  viteDevServer,
+} from '@/common/vite'
 import koaConnect from 'koa-connect'
+import * as Koa from 'koa'
 
-const viteServerMiddleware : Koa.Middleware = async function (ctx: Koa.Context, next: Koa.Next) {
-  const viteServer = await createViteServer({
-    root: process.cwd(),
-    server: {
-      middlewareMode: 'ssr',
-    },
-  })
-  
-  ctx.viteServer = viteServer
+const viteServerMiddleware : Koa.Middleware = async function (ctx, next) {
+  const viteServer = await viteDevServer
+
   await koaConnect(viteServer.middlewares)(ctx, next)
 }
 

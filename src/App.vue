@@ -3,6 +3,15 @@
     click me count: {{ count }}
   </div>
   <router-view />
+  <form
+    action="/"
+    method="post"
+  >
+    <input name="username">
+    <button name="submit">
+      submit
+    </button>
+  </form>
 </template>
 
 <script setup lang="ts">
@@ -13,7 +22,6 @@ import {
 let count = $ref(1)
 
 function handleClick() {
-  console.log(1)
   count++
 }
 </script>

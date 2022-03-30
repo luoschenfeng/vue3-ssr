@@ -2,8 +2,8 @@
     "compilerOptions": {
       /* Basic Options */
       // "incremental": true,                   /* Enable incremental compilation */
-      "target": "ESNext",
-      "module": "CommonJS",
+      "target": "EsNext",
+      "module": "CommonJs",
       // "lib": [],                             /* Specify library files to be included in the compilation. */
       // "allowJs": true,                       /* Allow javascript files to be compiled. */
       // "checkJs": true,                       /* Report errors in .js files. */
@@ -67,7 +67,7 @@
     },
     "include": [
       "src/**/*",
-      "dev-main.ts",
+      "vite.config.ts",
       "index.d.ts"
     ]
   }
